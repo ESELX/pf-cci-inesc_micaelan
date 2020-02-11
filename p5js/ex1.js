@@ -29,6 +29,31 @@ function mousePressed () { // Event
 
 function draw() { // happens forever.. loop
 
+  strokeWeight(18);
+    stroke(7, 62, 89);
+    circle(769,361, 480);
+
+    strokeWeight(14);
+    stroke(20, 92, 127);
+    circle(769,361, 448);
+
+    strokeWeight(12);
+    stroke(42, 131, 174);
+    circle(769,361, 422);
+
+    strokeWeight(10);
+    stroke(65, 163, 211);
+    circle(769,361, 400);
+
+     strokeWeight(11);
+    stroke(158, 207, 231);
+    circle(769,361, 379);
+
+     strokeWeight(20);
+    stroke(158, 207, 231);
+    circle(769,361, 350);
+
+
   image (sky, 0 , 0, window.innerWidth, window.innerHeight);
   imageMode (CENTER);
   image (earth,width/2, height/2); // (img, x, y, w, h)
