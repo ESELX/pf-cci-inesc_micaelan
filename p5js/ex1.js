@@ -1,6 +1,5 @@
 let earth // Declare variable 'img'
 let sky
-let diamEarth
 let button1
 let button2
 let button3
@@ -8,6 +7,7 @@ let button4
 let button5
 let button6
 let button7
+var name
 
 
 
@@ -20,6 +20,8 @@ earth = loadImage ('https://raw.githubusercontent.com/ESELX/pf-cci-inesc_micaela
 function setup() { // happens once
 createCanvas (window.innerWidth, window.innerHeight);
 background (0); // 0 preto 255 branco; // Fundo,Fundo,Fundo
+
+name = nr // assigment operation
 }
 
 
@@ -29,34 +31,26 @@ function mousePressed () { // Event
 
 function draw() { // happens forever.. loop
 
-  strokeWeight(18);
-    stroke(7, 62, 89);
-    circle(769,361, 480);
-
-    strokeWeight(14);
-    stroke(20, 92, 127);
-    circle(769,361, 448);
-
-    strokeWeight(12);
-    stroke(42, 131, 174);
-    circle(769,361, 422);
-
-    strokeWeight(10);
-    stroke(65, 163, 211);
-    circle(769,361, 400);
-
-     strokeWeight(11);
-    stroke(158, 207, 231);
-    circle(769,361, 379);
-
-     strokeWeight(20);
-    stroke(158, 207, 231);
-    circle(769,361, 350);
-
-
   image (sky, 0 , 0, window.innerWidth, window.innerHeight);
+
+    noStroke ();
+    fill(7, 62, 89);
+    circle(width/2, height/2, 485); // (769,361,480) circle(x, y, d)
+
+    fill(20, 92, 127);
+    circle(width/2, height/2, 455); // (769,361,448)
+
+    fill(42, 131, 174);
+    circle(width/2, height/2, 425); // (769,361,422)
+
+    fill(65, 163, 211);
+    circle(width/2, height/2, 395); // (769,361,400)
+
+    fill (158, 207, 231);
+    circle(width/2, height/2, 365); // (769,361,379)
+
   imageMode (CENTER);
-  image (earth,width/2, height/2); // (img, x, y, w, h)
+  image (earth, width/2, height/2); // (img, x, y, w, h)
 
   fill (0)
   button1 = createButton('Radio');
