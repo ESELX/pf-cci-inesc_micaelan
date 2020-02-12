@@ -7,9 +7,6 @@ let button4
 let button5
 let button6
 let button7
-var name
-
-
 
 function preload() { // runs once
 
@@ -20,8 +17,6 @@ earth = loadImage ('https://raw.githubusercontent.com/ESELX/pf-cci-inesc_micaela
 function setup() { // happens once
 createCanvas (window.innerWidth, window.innerHeight);
 background (0); // 0 preto 255 branco; // Fundo,Fundo,Fundo
-
-name = nr // assigment operation
 }
 
 
