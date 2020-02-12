@@ -1,12 +1,7 @@
 let earth // Declare variable 'img'
 let sky
-let button1
-let button2
-let button3
-let button4
-let button5
-let button6
-let button7
+let button1 ,button2 , button3, button4, button5, button6, button7
+
 
 function preload() { // runs once
 
@@ -18,11 +13,6 @@ function setup() { // happens once
 createCanvas (window.innerWidth, window.innerHeight);
 background (0); // 0 preto 255 branco; // Fundo,Fundo,Fundo
 }
-
-
-function mousePressed () { // Event
-}
-
 
 function draw() { // happens forever.. loop
 
@@ -52,7 +42,6 @@ function draw() { // happens forever.. loop
   button1.position ( width-1410, height-75);
   button1.mousePressed(changeRadio);
 
-  fill (0)
   button2 = createButton('Microwave');
   button2.position ( width-1210, height-75);
   button2.mousePressed(changeMicrowave);
@@ -76,8 +65,8 @@ function draw() { // happens forever.. loop
   button7 = createButton ('Gamma');
   button7.position (width-210,height-75);
   button7.mousePressed (changeGamma);
-}
 
+}
 
 function changeRadio() {
 }
