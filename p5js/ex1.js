@@ -10,13 +10,13 @@ let button7
 let showEarth
 let Wid = window.innerWidth
 let Hei = window.innerHeight
-let noOfButtons = 7
+let noOfButtons = 8
 
 // Wave variables setup
 let xspacing = 1; // Distance between each horizontal location
 let w; // Width of entire wave
 let theta = 0.0; // Start angle at 0
-let amplitude = 250.0; // Height of wave
+let amplitude = 125; // Height of wave
 let period // How many pixels before the wave repeats
 let dx; // Value for incrementing x
 let yvalues; // Using an array to store height values for the wave
@@ -39,6 +39,12 @@ createCanvas (Wid, Hei);
   yvalues = new Array(floor(w / xspacing));
 
 fill (0)
+
+var homeButton = createButton('Home');
+homeButton.position ( width-((width/(noOfButtons + 1))*8), height-75);
+homeButton.mousePressed(changeHome);
+
+
 var button1 = createButton('Radio');
 button1.position ( width-((width/(noOfButtons + 1))*7), height-75);
 button1.mousePressed(changeRadio);
@@ -68,6 +74,10 @@ button7.position (width-((width/(noOfButtons + 1))*1),height-75);
 button7.mousePressed (changeGamma);
 
 
+}
+
+function changeHome() {
+  showEarth = true
 }
 
 function changeRadio() {
