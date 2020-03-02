@@ -128,6 +128,7 @@ clear();
 
  if(showEarth) {
     noStroke ();
+    fill (9, 69, 99);
     circle(width/2, height/2, 485);
 
     fill(20, 92, 127);
